@@ -20,7 +20,7 @@ import com.example.chatbot_mobile.bin.data.chat
 import com.example.chatbot_mobile.bin.data.listChat
 import com.example.chatbot_mobile.ui.theme.ChatBotMobileTheme
 
-class MainActivity : AppCompatActivity() {
+class chatHistory_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -30,13 +30,12 @@ class MainActivity : AppCompatActivity() {
         val rvHistoryChat = findViewById<RecyclerView>(R.id.rvHistoryChat)
         val chatList = listChat(mutableListOf())
 
-        chatList.listChat.add(chat("Nguyễn Văn Bin có bằng TOEIC 765/990 điểm"))
         chatList.listChat.add(chat("What is your name?"))
-        chatList.listChat.add(chat("O kawaii koto !"))
-        chatList.listChat.add(chat("Onee-san wa mitaii ?"))
-        chatList.listChat.add(chat("Quân is two, two much weight"))
+        chatList.listChat.add(chat("How old are you?"))
+        chatList.listChat.add(chat("Where are you from?"))
+        chatList.listChat.add(chat("Do you like coffee?"))
         chatList.listChat.add(chat("What is your favorite color?"))
-        chatList.listChat.add(chat("Do you have any pets?"))
+        chatList.listChat.add(chat("Nguyễn Văn Bin có bằng TOEIC 765/990 điểm"))
         chatList.listChat.add(chat("What's your favorite movie?"))
         chatList.listChat.add(chat("Do you like traveling?"))
         chatList.listChat.add(chat("What is your hobby?"))
